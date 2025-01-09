@@ -1,0 +1,369 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  background-color: #000;
+  width: 100%;
+}
+
+.navigation-bar-fixed {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
+
+.logo {
+  margin-right: 10vw;
+  margin-left: 1rem;
+}
+
+.top {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar {
+  position: relative;
+  max-width: 45rem;
+  margin-left: 1rem;
+}
+
+.search-bar input {
+  height: 3rem;
+  border-radius: 2rem;
+  width: 30rem;
+  text-align: center;
+  background-color: #1f1f1f;
+  color: white;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.search-bar .icon-button {
+  position: absolute;
+  margin: 0.7rem 0.8rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.search-bar .right-icon {
+  right: 0.2rem;
+}
+
+.search-bar .icon-button img {
+  height: 1.6rem;
+}
+
+.sign-up-button {
+  margin-right: 0.5rem;
+}
+
+.sign-up-button button {
+  margin: 0 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  width: 6rem;
+  border-radius: 2rem;
+}
+
+/* Main Layout */
+.container {
+  display: flex;
+  height: 35rem;
+  min-height: 20rem; /* Full height minus navbar */
+  color: white;
+  overflow: hidden;
+}
+
+/* Left Section */
+.left {
+  width: 30vw;
+  overflow-y: auto;
+  scrollbar-width: none;
+  min-height: 15rem;
+  border-radius: 1rem;
+}
+
+.library {
+  position: relative;
+  height: 100%;
+  min-height: auto;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.heading img {
+  width: 2rem;
+  margin-right: 0.5rem;
+  height: 1.3rem;
+}
+
+.footer {
+  display: flex;
+  box-sizing: border-box;
+  margin: 2rem 1rem;
+  font-size: 0.625rem;
+  color: grey;
+  gap: 0.6rem;
+  padding-bottom: 1rem;
+}
+
+.footer a {
+  color: grey;
+  text-decoration: none;
+}
+
+/* .scroll-playlist-podcast {
+  width: 100%;
+  height: 15rem;
+  border-radius: 0.4rem;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.playlist-podcast {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #1f1f1f;
+  border-radius: 0.5rem;
+}
+
+.playlist-podcast p {
+  margin: 0.5rem 0;
+  font-size: 0.8rem;
+  font-weight: 450;
+} */
+
+/* your library */
+.song-playlist {
+  box-sizing: border-box;
+  height: 25rem;
+  width: 97%;
+  margin: 1rem;
+  overflow-y: scroll;
+}
+
+/* WebKit browsers */
+.song-playlist::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+.song-playlist:hover::-webkit-scrollbar-thumb {
+  background-color: #272626; /* Transparent black */
+  border-radius: 0.1rem;
+  border: none; /* No border */
+}
+
+/* List element of song-playlist */
+.song {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+}
+
+.info {
+  width: 18rem;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.info :nth-child(1) {
+  font-weight: 400;
+  margin: 0.3rem 0;
+}
+
+.info :nth-child(2) {
+  color: #767575;
+  text-overflow: clip;
+}
+
+.play-now {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 0.8rem;
+}
+
+.play-now img {
+  height: 2.5rem;
+  transition: opacity 0.5s ease;
+}
+
+/* Right Section */
+.right {
+  width: 69.5vw; /* Adjust width as needed */
+  overflow-y: auto; /* Allow vertical scrolling */
+  scrollbar-width: none;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.main {
+  width: 100%;
+  overflow-y: auto;
+  position: relative;
+  height: 100%;
+}
+
+.playlists-editors .card-container {
+  display: flex;
+  text-align: left;
+  box-sizing: content-box;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  width: 100%;
+  gap: 0.7rem;
+}
+
+.card {
+  width: 11rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.card p {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: #555353;
+  margin-left: 0.5rem;
+  text-overflow: ellipsis;
+}
+
+.card h4 {
+  margin-left: 0.5rem;
+}
+.card img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 0.5rem;
+}
+
+.play {
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  background-color: #1fdf64;
+  border-radius: 100%;
+  padding: 0.25rem;
+  top: 9rem;
+  right: 1.5rem;
+  opacity: 1;
+  transition: all ease-out;
+}
+
+.card:hover {
+  background-color: #1f1f1f;
+  height: 15rem;
+  border-radius: 0.5rem;
+}
+
+/* footer buttons playbar */
+footer {
+  display: flex;
+  margin: 0.5rem;
+}
+
+.song-card {
+  width: 30rem;
+  height: 4rem;
+  display: flex;
+  gap: 1rem;
+  margin-left: 0;
+}
+
+.playbar {
+  height: 4rem;
+  width: 40%;
+  z-index: 5;
+}
+
+.song-buttons {
+  width: 100%;
+  background-color: black;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-button button {
+  background-color: transparent;
+  border: none;
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+.play-button button:hover {
+  transform: scale(1.1);
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  color: #8a8888;
+  height: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  gap: 0.5rem;
+  align-items: center;
+}
+.seekbar {
+  width: 35rem;
+  border: none;
+  position: relative;
+  bottom: 0;
+  border-radius: 1rem;
+  background-color: #555353;
+  transition: background-color 0.2s ease;
+  overflow-x: hidden;
+}
+
+.seekbar:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.seekbar-filler {
+  width: 0;
+  position: relative;
+  border: 0.1rem solid whitesmoke;
+  border-radius: 1rem;
+  z-index: 5;
+  transition: background-color 0.2s ease, width 0.1s ease;
+}
+
+.seekbar:hover .seekbar-filler {
+  border-color: rgb(31, 209, 40);
+  cursor: pointer;
+}
