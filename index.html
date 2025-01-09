@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for Everyone</title>
+    <link
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+      href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png"
+    />
+    <link
+      rel="icon"
+      sizes="16x16"
+      type="image/png"
+      href="https://open.spotifycdn.com/cdn/images/favicon16.1c487bff.png"
+    />
+    <link
+      rel="icon"
+      href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico"
+    />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/utility.css" />
+    <!-- <script src="/javascript/scroll-behavior.js" defer></script> -->
+    <script type="module" src="/javascript/Main.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navigation-bar-fixed bg-black">
+        <div class="logo">
+          <img class="invert" src="/logo.svg" alt="" />
+        </div>
+        <div class="top m-1 p-1">
+          <button class="btn border-round">
+            <img src="/home.svg" alt="" />
+          </button>
+          <form action="#" method="get">
+            <div class="search-bar">
+              <button class="btn-black icon-button left-icon">
+                <img src="/search-button.svg" alt="" />
+              </button>
+              <input
+                type="search"
+                placeholder="What do you want to play?"
+                aria-label="Search"
+              />
+              <button class="btn-black icon-button right-icon">
+                <img src="/icon-podcast.svg" alt="" />
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="sign-up-button flex items-center">
+          <div class="nav-btn">
+            <button class="btn-black btn">Sign up</button>
+          </div>
+          <div class="nav-btn">
+            <a href="http://localhost:3000/login">
+              <button class="btn-white btn">Log in</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="container">
+      <div class="left">
+        <div class="library bg-grey rounded m-1 p-1">
+          <div>
+            <div class="heading">
+              <button class="btn-black flex btn">
+                <img src="/playlist.svg" alt="" />
+                <h3>Your Library</h3>
+              </button>
+              <button class="btn-black btn">
+                <img src="/plus.svg" alt="" />
+              </button>
+            </div>
+
+            <div class="song-playlist">
+              <ul>
+                <li></li>
+              </ul>
+            </div>
+            <!-- <div class="scroll-playlist-podcast">
+              <div class="playlist-podcast">
+                <h4>Create your first playlist</h4>
+                <p>It's easy, we'll help you</p>
+                <button class="btn-white btn">Create playlist</button>
+              </div>
+              <div class="playlist-podcast">
+                <h4>Let's find some podcasts to follow</h4>
+                <p>We'll keep you updated on new episodes</p>
+                <button class="btn-white btn">Browse podcasts</button>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="footer">
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/">
+                <span>Legal</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+                <span>Safety &amp; Privacy Center</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                <span>Privacy Policy</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                <span>Cookies</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+                <span>About Ads</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/accessibility/">
+                <span>Accessibility</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <section class="main bg-grey rounded m-1 p-1">
+          <div class="popular-artists m-2">
+            <h2>Popular artists</h2>
+          </div>
+          <div class="popular-albums-singles m-2">
+            <h2>Popular albums and singles</h2>
+          </div>
+          <div class="playlists-editors m-2">
+            <h2>Playlists from our editors</h2>
+            <div class="card-container">
+              <div class="card">
+                <div class="play">
+                  <img src="/play-green.svg" alt="" />
+                </div>
+                <img
+                  src="https://i.scdn.co/image/ab67706f00000002a6a35d85da2b230f63a0005a"
+                  alt=""
+                />
+                <h4>Dinnner with Friends</h4>
+                <p>The perfect soundtrack to those long nights over dinner</p>
+              </div>
+              <div class="card">
+                <img
+                  src="https://i.scdn.co/image/ab67706f000000029c46546f7e00afd77eeebded"
+                  alt=""
+                />
+                <h4>Dinnner lounge</h4>
+                <p>Soft electronic music for your dinner.</p>
+              </div>
+              <div class="card">
+                <img
+                  src="https://i.scdn.co/image/ab67706f00000002a79aa912d12b40e0f1c88f39"
+                  alt=""
+                />
+                <h4>Feel good Dinnner</h4>
+                <p>
+                  An uplifting yet tasteful dinner playlist with a guaranteed
+                  feel good vibe.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <footer>
+      <div class="song-card"></div>
+      <div class="playbar">
+        <div class="song-buttons">
+          <div class="play-button">
+            <button class="btn">
+              <img class="shuffle" src="/shuffle.svg" alt="" />
+            </button>
+            <button class="btn">
+              <img class="previous" src="/previous.svg" alt="" />
+            </button>
+          </div>
+          <div class="play-button">
+            <button>
+              <img class="play-pause" src="/play-white.svg" alt="" />
+            </button>
+          </div>
+          <div class="play-button">
+            <button class="btn">
+              <img class="next" src="/next-button.svg" alt="" />
+            </button>
+            <button class="btn">
+              <img class="repeat" src="/repeat.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="start"><span>0:00</span></div>
+          <div class="seekbar">
+            <div class="seekbar-filler"></div>
+          </div>
+          <div class="end"><span>0:00</span></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
